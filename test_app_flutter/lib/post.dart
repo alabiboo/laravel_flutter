@@ -71,13 +71,13 @@ class _PostState extends State<Post> {
                                   "user_id": 1, 
                                 }; 
                                 http.Response response = await http.post(
-                                                              Uri.parse('/api/'),
-                                                              headers: <String, String>{
-                                                                'Content-Type': 'application/json; charset=UTF-8',
-                                                                "Accept": "application/json"
-                                                              },
-                                                              body: jsonEncode(userData),
-                                                            ); 
+                                                            Uri.parse('https://thawing-inlet-32337.herokuapp.com/api/'),
+                                                            headers: <String, String>{
+                                                              'Content-Type': 'application/json; charset=UTF-8',
+                                                              "Accept": "application/json"
+                                                            },
+                                                            body: jsonEncode(userData),
+                                                          );
  
  
                                       final jsonResponse = json.decode(response.body) ;

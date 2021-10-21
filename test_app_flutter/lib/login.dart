@@ -175,7 +175,7 @@ class _LoginPageState extends State<LoginPage> {
                                   "password": passwordController.text, 
                                 }; 
                                 http.Response response = await http.post(
-                                                              Uri.parse('/api/auth/login'),
+                                                              Uri.parse('https://thawing-inlet-32337.herokuapp.com/api/auth/login'),
                                                               headers: <String, String>{
                                                                 'Content-Type': 'application/json; charset=UTF-8',
                                                                 "Accept": "application/json"

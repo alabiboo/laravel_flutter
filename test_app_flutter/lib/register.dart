@@ -288,7 +288,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                 
 
                                 http.Response response = await http.post(
-                                                              Uri.parse('192.168.1.67/api/auth/register'),
+                                                              Uri.parse('https://thawing-inlet-32337.herokuapp.com/api/auth/register'),
                                                               headers: <String, String>{
                                                                 'Content-Type': 'application/json; charset=UTF-8',
                                                                 "Accept": "application/json"
